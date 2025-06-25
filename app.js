@@ -72,21 +72,20 @@
     let total = 0;
   
     carrinho.forEach(item => {
-      const produto = listaProdutos.find(p => p.id === item.id);
-      const subtotal = produto.preco * item.quantidade;
-      total += subtotal;
+      
+      total += Number(item.preco);
   
       const div = document.createElement("div");
       div.className = "carrinho-item";
       div.innerHTML = `
-        ${produto.nome} - Quantidade: ${item.quantidade} - Subtotal: R$ ${subtotal.toFixed(2)}
+        ${item.nome} - Quantidade: ${item.quantidade} - Subtotal: R$ ${item.preco}
         <button onclick="removerDoCarrinho(${item.id})">Remover</button>
       `;
       divCarrinho.appendChild(div);
     });
   
     const totalDiv = document.createElement("div");
-    totalDiv.innerHTML = `<strong>Total: R$ ${total.toFixed(2)}</strong>`;
+    totalDiv.innerHTML = `<strong>Total: R$ ${total}</strong>`;
     divCarrinho.appendChild(totalDiv);
   }
   
