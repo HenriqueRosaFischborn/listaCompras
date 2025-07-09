@@ -96,3 +96,18 @@
   mostrarProdutos();
   mostrarCarrinho();
   
+
+  document.getElementById("toggle-theme").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("tema", isDark ? "dark" : "light");
+  });
+  
+  // Aplica o tema salvo no localStorage ao carregar a página
+  document.addEventListener("DOMContentLoaded", () => {
+    const temaSalvo = localStorage.getItem("tema");
+    if (temaSalvo === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  });
+  

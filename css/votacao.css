@@ -18,7 +18,7 @@ a h3 {
     color: #1976d2;
     text-decoration: none;
     margin-bottom: 20px;
-    transition: color 0.3s;
+    
 }
 
 a h3:hover {
@@ -36,7 +36,7 @@ a h3:hover {
     background-color: #ffffff;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, background-color 0.2s;
+    
     min-width: 180px;
     font-weight: bold;
 }
@@ -65,3 +65,53 @@ a h3:hover {
     margin-right: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+#toggle-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+    
+}
+
+#toggle-theme:hover {
+    background-color: #256b45;
+}
+
+/* Tema escuro */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+body.dark-mode .product,
+body.dark-mode .produto,
+body.dark-mode .carrinho-item,
+body.dark-mode #most-voted {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+    border-color: #444;
+}
+
+body.dark-mode button,
+body.dark-mode #toggle-theme {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode a h3 {
+    color: #90caf9;
+}
+
+body.dark-mode a h3:hover {
+    color: #42a5f5;
+}
+
+/*transition*/
