@@ -1,0 +1,74 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: #2e8b57;
+}
+
+#produtos,
+#carrinho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.produto,
+.carrinho-item {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background: white;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.produto:hover,
+.carrinho-item:hover {
+    transform: scale(1.03);
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #256b45;
+}
+
+#divTotal {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+a h3 {
+    color: #ff5722;
+    text-align: center;
+    margin-top: 30px;
+    transition: color 0.3s;
+}
+
+a h3:hover {
+    color: #e64a19;
+    text-decoration: underline;
+}
