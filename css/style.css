@@ -10,7 +10,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    color: #2e8b57;
+    color: #007694;
 }
 
 #produtos,
@@ -41,7 +41,7 @@ h3 {
 button {
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #2e8b57;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 8px;
@@ -78,7 +78,7 @@ a h3:hover {
     top: 20px;
     right: 20px;
     padding: 10px 15px;
-    background-color: #2e8b57;
+    background-color: #2b032b;
     color: white;
     border: none;
     border-radius: 8px;
@@ -89,6 +89,24 @@ a h3:hover {
 
 #toggle-theme:hover {
     background-color: #256b45;
+}
+
+#pink-theme {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #910385;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#pink-theme:hover {
+    background-color: #490432;
 }
 
 /* Tema escuro */
@@ -118,6 +136,35 @@ body.dark-mode a h3 {
 
 body.dark-mode a h3:hover {
     color: #42a5f5;
+}
+
+/* Tema rosa */
+body.pink-mode {
+    background-color: #680e68;
+    color: hsl(0, 100%, 100%);
+}
+
+body.pink-mode .product,
+body.pink-mode .produto,
+body.pink-mode .carrinho-item,
+body.pink-mode #most-voted {
+    background-color: #8a2073;
+    color: #f1f1f1;
+    border-color: #fcfcfc;
+}
+
+body.pink-mode button,
+body.pink-mode #toggle-theme {
+    background-color: #5c0855;
+    color: #f3d5ec;
+}
+
+body.pink-mode a h3 {
+    color: #90caf9;
+}
+
+body.pink-mode a h3:hover {
+    color: #ca6ba6;
 }
 
 

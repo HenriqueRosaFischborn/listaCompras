@@ -102,6 +102,12 @@
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem("tema", isDark ? "dark" : "light");
   });
+
+  document.getElementById("pink-theme").addEventListener("click", () => {
+    document.body.classList.toggle("pink-mode");
+    const isPink = document.body.classList.contains("pink-mode");
+    localStorage.setItem("tema", isPink ? "pink" : "light");
+  });
   
   // Aplica o tema salvo no localStorage ao carregar a página
   document.addEventListener("DOMContentLoaded", () => {
@@ -111,3 +117,6 @@
     }
   });
   
+
+
+  // toggle-theme
